@@ -23,7 +23,7 @@ pipeline
       stage("Build docker")
       {
         steps{
-         docker build -f Dockerfile -t exemplekubernetes ."        
+         sh "docker build -f Dockerfile -t exemplekubernetes ."        
         }
       }
   }
