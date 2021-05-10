@@ -24,7 +24,7 @@ pipeline
         stage("Build docker")
         {
             steps{
-                sh "docker build -f Dockerfile -t  Exemplekubernetes ."
+                sh "docker build -f Dockerfile -t  ExempleKubernetesJenkins-Kubernetes ."
             }
         }
               
