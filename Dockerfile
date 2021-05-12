@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8-jdk-alpine
 EXPOSE 8989
-ADD target/ExempleKubernetesJenkins-Kubernetes.jar ExempleKubernetesJenkins-Kubernetes.jar
-ENTRYPOINT ["java","-jar","ExempleKubernetesJenkins-Kubernetes.jar"]
+ADD target/*.jar exempleKubernetesJenkins-Kubernetes.jar
+ENTRYPOINT ["java","-jar","./exempleKubernetesJenkins-Kubernetes.jar"]
