@@ -27,6 +27,12 @@ pipeline
                 sh "docker build -f Dockerfile -t  exemplekubernetesjenkins ."
             }
         }
+		stage("deployment kubernetes")
+        {
+            steps{
+                sh "kubectl create deployment exemplekubernetesjenkins --image=exemplekubernetesjenkins"
+            }
+        }
               
     }
    
