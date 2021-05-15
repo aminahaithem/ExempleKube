@@ -30,7 +30,7 @@ pipeline
 		stage("deployment kubernetes")
         {
             steps{
-                sh "kubectl create deployment exemplekubernetesjenkins --image=exemplekubernetesjenkins"
+                sh "kubectl create deployment exemplekubernetesjenkins --image=exemplekubernetesjenkins --port=8989"
             }
         }
               
